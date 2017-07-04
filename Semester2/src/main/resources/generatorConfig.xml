@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <context id="MyBatisDemo">
+        <jdbcConnection connectionURL="jdbc:mysql://你的URL／IP地址:端口/数据库名字"
+                        driverClass="com.mysql.jdbc.Driver" password="你的密码" userId="你的账号"/>
+        <javaModelGenerator targetPackage="model包名字" targetProject="src/main/java"/>
+        <javaClientGenerator targetPackage="dao包名字" targetProject="src/main/java" type="ANNOTATEDMAPPER"/>
+        <!--<javaModelGenerator targetPackage="com.seeu.user.model" targetProject="src/main/java"/>-->
+        <!--<javaClientGenerator targetPackage="com.seeu.user.dao" targetProject="src/main/java" type="ANNOTATEDMAPPER"/>-->
+
+
+        <table schema="数据库名字" tableName="表名" domainObjectName="对应的JavaClass名字"
+               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+        </table>
+
+        <table schema="数据库名字" tableName="表名2" domainObjectName="对应的JavaClass名字2"
+               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+        </table>
+
+        <table schema="数据库名字" tableName="表名3" domainObjectName="对应的JavaClass名字3"
+               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+        </table>
+    </context>
+</generatorConfiguration>
